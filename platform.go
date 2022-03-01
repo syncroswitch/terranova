@@ -26,7 +26,7 @@ import (
 	"github.com/hashicorp/terraform/internal/states"
 	"github.com/hashicorp/terraform/internal/states/statemgr"
 	"github.com/hashicorp/terraform/internal/terraform"
-	"github.com/johandry/terranova/logger"
+	"github.com/syncroswitch/terranova/logger"
 	"github.com/terraform-providers/terraform-provider-null/null"
 )
 
