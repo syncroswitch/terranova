@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform/backend/local"
+	"github.com/hashicorp/terraform/internal/backend/local"
 )
 
 func TestStats_FromPlan(t *testing.T) {
