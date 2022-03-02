@@ -27,7 +27,7 @@ import (
 	"github.com/hashicorp/terraform/internal/states/statemgr"
 	"github.com/hashicorp/terraform/internal/terraform"
 	"github.com/syncroswitch/terranova/logger"
-	"github.com/terraform-providers/terraform-provider-null/null"
+	//"github.com/terraform-providers/terraform-provider-null/provider"
 )
 
 // Platform is the platform to be managed by Terraform
@@ -68,7 +68,7 @@ func NewPlatform(code string, hooks ...terraform.Hook) *Platform {
 
 func (p *Platform) addDefaultProviders() {
 	p.Providers = map[addrs.Provider]providers.Factory{}
-	p.AddProvider("null", null.Provider())
+	//", provider.New())
 }
 
 // AddProvider adds a new provider to the providers list
